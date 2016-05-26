@@ -3,8 +3,8 @@ html {
     font-size: 10px;
     background: #105B63;
     position: relative;
-    padding: 10px;
-    margin: 10px;
+    padding: 1em;
+    margin: 1em;
     margin-top: calc(50vh - 192px);
     margin-top: -webkit-calc(50vh - 192px);
 }

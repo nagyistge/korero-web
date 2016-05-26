@@ -1,5 +1,11 @@
 $(document).ready(function () {
-    $('.icons').click(function () {
-        $(this).toggleClass('highlighted');
-    });
+    $('.icons').hover(function () {
+            $(this).animate({"padding": "3em"}, "fast");
+            $(this).addClass('highlighted');
+        },
+        function () {
+            $(this).animate({"padding": "1em"}, "fast");
+            $(this).removeClass('highlighted');
+        }
+    );
 });
