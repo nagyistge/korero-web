@@ -29,7 +29,8 @@ body, button {
 
 .body-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 /* Buttons */
@@ -150,4 +151,27 @@ body, button {
 .menu-panel li:hover {
   background: #D1C4E9; /* .light-primary-color */
   color: #37474f; /* .panel-light-color */
+}
+
+/* Content */
+.content-container {
+  margin: 1em;
+  padding: 1em;
+}
+
+.content-container>header {
+  font-size: 2em;
+  font-variant-caps: all-small-caps;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.content-container p[title="abstract"]{
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.content-container p{
+  padding-top: 0.5em;
 }
