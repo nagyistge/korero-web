@@ -118,3 +118,21 @@ li {
         text-align: left;
     }
 }
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+
+    html {
+        background: none;
+    }
+
+    #devices-image {
+        background-color: #EFFB41;
+    }
+
+    .icons {
+        background-color: #bbbbbb;
+    }
+}
