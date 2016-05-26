@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    background: #ffd34e;
+    position: relative;
+    margin-top: calc(50vh - 192px);
+    margin-top: -webkit-calc(50vh - 192px);
+}
+
+.login-form li {
+    display: inline;
+    float: left;
+    min-width: 0;
+}
+
+label {
+    display: block;
+    color: #105b63;
+}
+
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.login-form input:not(#submit) {
+    padding: 1em;
+    margin-right: .5em;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.login-form #submit {
+    border: 1px solid gray;
+    background: #105b63;
+    background: linear-gradient(to bottom, #105b63 0%, #105b63 100%);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    color: #fffad5;
+    padding: 1em;
+    margin-top: 1.5em;
+    border-radius: 3px;
+    display: inline;
+}
+
+section {
+    width: 256px;
+    padding: 2em;
+    background-color: #fffad5;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    text-align: center;
+    vertical-align: bottom;
+    color: #fffad5;
+}
+
+.logo {
+    float: right;
+    display: flex;
+    justify-content: center;
+}
+
+.login-form {
+    float: left;
+    height: 256px;
+}
+
+#cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none !important;
+    border-color: #105b63;
+    box-shadow: 0 0 10px #105b63;
+}
+
+@media screen and (max-width: 640px) {
+    html {
+        /*    background: red;*/
+        margin-top: calc(50vh - 192px);
+        margin-top: -webkit-calc(50vh - 192px);
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .login-form {
+        float: right;
+        width: 256px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media print {
+    * {
+        background: none;
+    }
+
+    label {
+        color: black;
+    }
+
+    .login-form #submit {
+        color: black;
+        background: none;
+    }
+
+    footer {
+        color: black;
+        font-size: larger;
+    }
+
+    section {
+        background: none;
+        box-shadow: none;
+        border: 1px solid black;
+    }
+
+    .login-form {
+        color: black;
+        background: none;
+    }
+
+    .login-form input {
+        border: 1px solid black;
+        text-shadow: none;
+    }
+}
