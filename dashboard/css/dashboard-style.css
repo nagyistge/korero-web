@@ -19,7 +19,8 @@
 .panel-dark-color      { background: #263238; background: rgba(0,0,0,.87); }
 .panel-light-color     { background: #37474f; }
 .panel-primary-text-color { color: #eceff1; }
-/* .panel-secondary-text-color { color: rgba(255, 255, 255, 0.56); } */
+.panel-secondary-text-color { color: rgba(255, 255, 255, 0.56); }
+/* .panel-secondary-text-color { color: #D1C4E9; }*/
 
 /* Body */
 body, button {
@@ -124,13 +125,29 @@ body, button {
 
 /* Navigation: Menu index */
 .menu-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   min-height: calc(100vh - 12em);
 }
 
 .menu-panel>ul {
-   list-style-type: none;
+  width: 100%;
+  font-size: 0.9em;
+  font-weight: 500;
+  list-style-type: none;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  overflow-y: auto;
 }
 
 .menu-panel li {
-    
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 5em;
+}
+
+.menu-panel li:hover {
+  background: #D1C4E9; /* .light-primary-color */
+  color: #37474f; /* .panel-light-color */
 }
