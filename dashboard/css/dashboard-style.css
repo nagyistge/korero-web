@@ -19,7 +19,7 @@
 .panel-dark-color      { background: #263238; background: rgba(0,0,0,.87); }
 .panel-light-color     { background: #37474f; }
 .panel-primary-text-color { color: #eceff1; }
-.panel-secondary-text-color { color: rgba(255, 255, 255, 0.56); }
+/* .panel-secondary-text-color { color: rgba(255, 255, 255, 0.56); } */
 
 /* Body */
 body, button {
@@ -40,6 +40,7 @@ body, button {
 
   height: 3em;
   background-color: transparent;
+  box-sizing: border-box;
   border: 1px #eceff1 solid; /* .panel-primary-text-color */
   border-radius: 2px;
   text-align: center;
@@ -62,6 +63,7 @@ body, button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100vh;
   min-width: 14em;
   max-width: 20em;
   width: 23%;
@@ -116,6 +118,6 @@ body, button {
   min-height: 20em;
 }
 
-.menu-panel>ul {
+/* .menu-panel>ul {
 
-}
+} */
