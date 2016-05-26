@@ -1,14 +1,13 @@
 html {
-    font-family:Roboto;
-    font-size:10px;
+    font-family: Roboto, sans-serif;
+    font-size: 10px;
     background: #105B63;
     position: relative;
-    padding:10px;
-    margin:10px;
+    padding: 10px;
+    margin: 10px;
     margin-top: calc(50vh - 192px);
     margin-top: -webkit-calc(50vh - 192px);
 }
-
 
 section {
     padding: 1em;
@@ -22,7 +21,7 @@ section {
     background-color: #bbbbbb;
     display: inline-block;
     vertical-align: middle;
-    margin:3em;
+    margin: 3em;
 }
 
 footer {
@@ -45,20 +44,20 @@ footer {
 #title {
     position: relative;
     left: 0.8em;
-    font-size:4.8em;
+    font-size: 4.8em;
 }
 
 #desc {
     position: relative;
-    margin:2.4em;
-    font-size:24;
+    margin: 2.4em;
+    font-size: 24;
 }
 
 #devices-image {
     position: relative;
-    bottom:6.4em;
+    bottom: 6.4em;
     background-color: #EFFB41;
-    width:25em;
+    width: 25em;
 }
 
 #big-section {
@@ -66,9 +65,8 @@ footer {
 }
 
 li {
-    font-size:2em;
+    font-size: 2em;
 }
-
 
 @media screen and (max-width: 640px) {
     html {
@@ -87,7 +85,7 @@ li {
 
     #title {
         font-size: 2.8em;
-        font-style:bold;
+        font-weight: bold;
     }
 
     #desc {
@@ -95,7 +93,7 @@ li {
     }
 
     li {
-        font-size:1.2em;
+        font-size: 1.2em;
     }
 
     #icons {
@@ -104,13 +102,12 @@ li {
     }
 
     #devices-image {
-    display: relative;
-    left:4em;
-    background-color: #EFFB41;
-    bottom: 0em;
-    width:25em;
+        position: relative;
+        left: 4em;
+        background-color: #EFFB41;
+        bottom: 0;
+        width: 25em;
     }
-
 
     #big-section {
         display: table;
@@ -120,6 +117,4 @@ li {
     footer {
         text-align: left;
     }
-}
-
 }
