@@ -17,23 +17,33 @@ section {
     border: 0.1em solid rgba(0, 0, 0, 0.3);
 }
 
+.cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*perspective: 600px;*/
+}
+
 .icons {
-    background-color: #bbbbbb;
+    /*background-color: #bbbbbb;*/
+    background-color: #BD4932;
     display: inline-block;
     vertical-align: middle;
     margin: 3em;
+    padding: 1em;
+    box-sizing: border-box;
+    transform: perspective(150px) rotateY(45deg);
+    transition: transform 1s;
+}
+
+.highlighted {
+    transform: rotateY(0deg);
 }
 
 footer {
     text-align: center;
     vertical-align: bottom;
     color: #fffad5;
-}
-
-.cnt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #info {
@@ -66,10 +76,6 @@ footer {
 
 li {
     font-size: 2em;
-}
-
-.highlighted {
-    background-color: #BD4932;
 }
 
 @media screen and (max-width: 640px) {
