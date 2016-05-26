@@ -19,7 +19,8 @@
 .panel-dark-color      { background: #263238; background: rgba(0,0,0,.87); }
 .panel-light-color     { background: #37474f; }
 .panel-primary-text-color { color: #eceff1; }
-/* .panel-secondary-text-color { color: rgba(255, 255, 255, 0.56); } */
+.panel-secondary-text-color { color: rgba(255, 255, 255, 0.56); }
+/* .panel-secondary-text-color { color: #D1C4E9; }*/
 
 /* Body */
 body, button {
@@ -28,7 +29,8 @@ body, button {
 
 .body-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 /* Buttons */
@@ -44,6 +46,10 @@ body, button {
   border: 1px #eceff1 solid; /* .panel-primary-text-color */
   border-radius: 2px;
   text-align: center;
+}
+
+.button-secondary:hover{
+  background: #673AB7; /*.accent-color*/
 }
 
 .button-secondary>i {
@@ -65,20 +71,21 @@ body, button {
   justify-content: center;
   height: 100vh;
   min-width: 14em;
-  max-width: 20em;
+  max-width: 18em;
   width: 23%;
 }
 
 /* Navigation: Identity and Actions */
-.identity-panel{
+.identity-panel,
+.identity-footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 1em;
 }
 
-.identity-panel>div{
-  padding-top: 1em;
+.identity-panel {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 .identity-info  {
@@ -101,12 +108,16 @@ body, button {
   height: 1em;
 }
 
+.identity-footer {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
 .identity-actions{
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: center;
-  margin-bottom: 1em;
+  width: 100%;
 }
 
 .identity-actions>button{
@@ -115,9 +126,52 @@ body, button {
 
 /* Navigation: Menu index */
 .menu-panel {
-  min-height: 20em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: calc(100vh - 12em);
 }
 
-/* .menu-panel>ul {
+.menu-panel>ul {
+  width: 100%;
+  font-size: 0.9em;
+  font-weight: 500;
+  list-style-type: none;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  overflow-y: auto;
+}
 
-} */
+.menu-panel li {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 5em;
+}
+
+.menu-panel li:hover {
+  background: #D1C4E9; /* .light-primary-color */
+  color: #37474f; /* .panel-light-color */
+}
+
+/* Content */
+.content-container {
+  margin: 1em;
+  padding: 1em;
+}
+
+.content-container>header {
+  font-size: 2em;
+  font-variant-caps: all-small-caps;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.content-container p[title="abstract"]{
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.content-container p{
+  padding-top: 0.5em;
+}
