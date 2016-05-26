@@ -1,0 +1,121 @@
+/* SECTIONS:
+- Colors;
+- Body;
+- Buttons;
+- Navigation:
+--- Identity and Actions
+--- Menu Index
+*/
+
+/* Colors */
+.dark-primary-color    { background: #512DA8; }
+.default-primary-color { background: #673AB7; }
+.light-primary-color   { background: #D1C4E9; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #FF4081; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #727272; }
+.divider-color         { border-color: #B6B6B6; }
+.panel-dark-color      { background: #263238; background: rgba(0,0,0,.87); }
+.panel-light-color     { background: #37474f; }
+.panel-primary-text-color { color: #eceff1; }
+.panel-secondary-text-color { color: rgba(255, 255, 255, 0.56); }
+
+/* Body */
+body, button {
+  font-family: "Roboto", sans-serif;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Buttons */
+.button-secondary {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  height: 3em;
+  background-color: transparent;
+  border: 1px #eceff1 solid; /* .panel-primary-text-color */
+  border-radius: 2px;
+  text-align: center;
+}
+
+.button-secondary>i {
+  display: inline-flex;
+  float: left;
+}
+.button-secondary>span {
+  display: inline-flex;
+  float: left;
+  margin-top: 0.25em;
+  margin-left: 0.25em;
+}
+
+
+/* Navigation */
+.navigation-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 14em;
+  max-width: 20em;
+  width: 23%;
+}
+
+/* Navigation: Identity and Actions */
+.identity-panel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+
+.identity-panel>div{
+  padding-top: 1em;
+}
+
+.identity-info  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.identity-info>img {
+  border-radius: 100%;
+  border: 0;
+  width: 3em;
+  height: 3em;
+}
+
+.identity-info>div {
+  margin-top: 0.75em;
+  margin-left: 0.75em;
+  height: 1em;
+}
+
+.identity-actions{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.identity-actions>button{
+  margin-right: 1em;
+}
+
+/* Navigation: Menu index */
+.menu-panel {
+  min-height: 20em;
+}
+
+.menu-panel>ul {
+
+}
