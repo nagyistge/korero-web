@@ -16,7 +16,7 @@
 .primary-text-color    { color: #212121; }
 .secondary-text-color  { color: #727272; }
 .divider-color         { border-color: #B6B6B6; }
-.panel-dark-color      { background: #263238; background: rgba(0,0,0,.87); }
+.panel-dark-color      { background: #263238; }
 .panel-light-color     { background: #37474f; }
 .panel-primary-text-color { color: #eceff1; }
 .panel-secondary-text-color { color: rgba(255, 255, 255, 0.56); }
@@ -84,8 +84,8 @@ body, button {
 }
 
 .identity-panel {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 1.4em;
+  padding-bottom: 1.4em;
 }
 
 .identity-info  {
@@ -109,8 +109,8 @@ body, button {
 }
 
 .identity-footer {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 1.4em;
+  padding-bottom: 1.4em;
 }
 
 .identity-actions{
@@ -145,7 +145,7 @@ body, button {
 .menu-panel li {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  padding-left: 5em;
+  padding-left: 30%;
 }
 
 .menu-panel li:hover {
@@ -155,6 +155,8 @@ body, button {
 
 /* Content */
 .content-container {
+  border: 1px #000 solid;
+  max-width: 63em;
   margin: 1em;
   padding: 1em;
 }
