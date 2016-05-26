@@ -160,11 +160,11 @@ li {
         content: url(img/ic_lock_outline_black.png)
     }
 
-    .icon-media img {
+    #icon-media img {
         display: none;
     }
 
-    .icon-media:after {
-        content: url(img/ic_perm_media_black.png) ';
+    #icon-media:after {
+        content: url(img/ic_perm_media_black.png);
     }
 }
