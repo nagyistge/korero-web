@@ -143,7 +143,7 @@ li {
 
     .icons {
         background-color: #bbbbbb;
-
+        transform: rotateY(0deg);
     }
 
     #icon-history img {
