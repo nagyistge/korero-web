@@ -68,6 +68,10 @@ li {
     font-size: 2em;
 }
 
+.highlighted {
+    background-color: #BD4932;
+}
+
 @media screen and (max-width: 640px) {
     html {
         margin-top: 0;
