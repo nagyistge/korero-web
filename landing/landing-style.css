@@ -17,7 +17,7 @@ section {
     border: 0.1em solid rgba(0, 0, 0, 0.3);
 }
 
-#icons {
+.icons {
     background-color: #bbbbbb;
     display: inline-block;
     vertical-align: middle;
@@ -30,7 +30,7 @@ footer {
     color: #fffad5;
 }
 
-#cnt {
+.cnt {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,10 +47,10 @@ footer {
     font-size: 4.8em;
 }
 
-#desc {
+.desc {
     position: relative;
     margin: 2.4em;
-    font-size: 24;
+    font-size: 16px;
 }
 
 #devices-image {
@@ -60,7 +60,7 @@ footer {
     width: 25em;
 }
 
-#big-section {
+.big-section {
     width: 90em;
 }
 
@@ -73,7 +73,7 @@ li {
         margin-top: 0;
     }
 
-    #cnt {
+    .cnt {
         display: table;
     }
 
@@ -88,7 +88,7 @@ li {
         font-weight: bold;
     }
 
-    #desc {
+    .desc {
         font-size: 1.4em;
     }
 
@@ -96,7 +96,7 @@ li {
         font-size: 1.2em;
     }
 
-    #icons {
+    .icons {
         align-items: center;
 
     }
@@ -109,7 +109,7 @@ li {
         width: 25em;
     }
 
-    #big-section {
+    .big-section {
         display: table;
         width: 40em;
     }
