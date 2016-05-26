@@ -46,6 +46,10 @@ body, button {
   text-align: center;
 }
 
+.button-secondary:hover{
+  background: #673AB7; /*.accent-color*/
+}
+
 .button-secondary>i {
   display: inline-flex;
   float: left;
@@ -65,20 +69,21 @@ body, button {
   justify-content: center;
   height: 100vh;
   min-width: 14em;
-  max-width: 20em;
+  max-width: 18em;
   width: 23%;
 }
 
 /* Navigation: Identity and Actions */
-.identity-panel{
+.identity-panel,
+.identity-footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 1em;
 }
 
-.identity-panel>div{
-  padding-top: 1em;
+.identity-panel {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 .identity-info  {
@@ -101,12 +106,16 @@ body, button {
   height: 1em;
 }
 
+.identity-footer {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
 .identity-actions{
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: center;
-  margin-bottom: 1em;
+  width: 100%;
 }
 
 .identity-actions>button{
@@ -115,9 +124,13 @@ body, button {
 
 /* Navigation: Menu index */
 .menu-panel {
-  min-height: 20em;
+  min-height: calc(100vh - 12em);
 }
 
-/* .menu-panel>ul {
+.menu-panel>ul {
+   list-style-type: none;
+}
 
-} */
+.menu-panel li {
+    
+}
