@@ -5,8 +5,8 @@
     <title>Welcome to Korero</title>
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link type="text/css" rel="stylesheet" href="landing-style.css"/>
-    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/landing-style.css"/>
+    <script type="text/javascript" src="../lib/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="js/landing.js"></script>
 </head>
 <body>
@@ -43,16 +43,18 @@
         <img src="img/ic_perm_media_white.png"/>
     </section>
     <script> //preload print images
-        if (document.images) {
-            var img1 = new Image();
-            var img2 = new Image();
-            var img3 = new Image();
-            var img4 = new Image();
-            img1.src = "img/ic_history_black.png";
-            img2.src = "img/ic_android_black.png";
-            img3.src = "img/ic_lock_outline_black.png";
-            img4.src = "img/ic_perm_media_black.png";
-        }
+    if (document.images) {
+        var img1 = new Image();
+        var img2 = new Image();
+        var img3 = new Image();
+        var img4 = new Image();
+        var img5 = new Image();
+        img1.src = "img/ic_history_black.png";
+        img2.src = "img/ic_android_black.png";
+        img3.src = "img/ic_lock_outline_black.png";
+        img4.src = "img/ic_perm_media_black.png";
+        img5.src = "img/devices_transp.png";
+    }
     </script>
 </div>
 

@@ -151,7 +151,7 @@ li {
     }
 
     #icon-history:after {
-        content: url(img/ic_history_black.png);
+        content: url(../img/ic_history_black.png);
     }
 
     #icon-android img {
@@ -159,7 +159,7 @@ li {
     }
 
     #icon-android:after {
-        content: url(img/ic_android_black.png);
+        content: url(../img/ic_android_black.png);
     }
 
     #icon-lock img {
@@ -167,7 +167,7 @@ li {
     }
 
     #icon-lock:after {
-        content: url(img/ic_lock_outline_black.png)
+        content: url(../img/ic_lock_outline_black.png)
     }
 
     #icon-media img {
@@ -175,6 +175,14 @@ li {
     }
 
     #icon-media:after {
-        content: url(img/ic_perm_media_black.png);
+        content: url(../img/ic_perm_media_black.png);
+    }
+
+    #devices-image img {
+        display: none;
+    }
+
+    #devices-image:after {
+        content: url(../img/devices_transp.png);
     }
 }
