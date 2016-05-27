@@ -1,8 +1,14 @@
+/* @media (max-height: 700px) {
+  .menu-panel {
+    min-height: calc(100vh - 10em);
+  }
+}*/
+
 @media (max-height: 460px) {
   .identity-panel,
   #menu-hide {
-    padding-top: 0.7em;
-    padding-bottom: 0.7em;
+    padding-top: 0.5em;
+    padding-bottom: 1.2em;
   }
   .identity-panel>div,
   #menu-hide>div {
