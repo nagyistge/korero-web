@@ -140,7 +140,7 @@ body, button {
 
 .menu-panel>ul {
   width: 100%;
-  font-size: 0.9em;
+  font-size: 0.85em;
   font-weight: 500;
   list-style-type: none;
   margin-top: 2em;
@@ -149,9 +149,24 @@ body, button {
 }
 
 .menu-panel li {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  padding-left: 30%;
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+  padding-left: 25%;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.menu-panel li>i {
+  display: inline-flex;
+  float: left;
+}
+.menu-panel li>span {
+  display: inline-flex;
+  float: left;
+  margin-top: 0.25em;
+  margin-left: 1.4em;
 }
 
 .menu-panel li:hover {
@@ -258,6 +273,11 @@ body, button {
 .casting-shadow {
   z-index: 3;
   box-shadow: 0 2px 3px 0 rgba(0,0,0,.16),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.casting-shadow-above {
+  z-index: 3;
+  box-shadow: 0 -2px 3px 0 rgba(0,0,0,.16),0 -3px 1px -2px rgba(0,0,0,.2),0 -1px 5px 0 rgba(0,0,0,.12);
 }
 
 .casting-shadow-onhover {
