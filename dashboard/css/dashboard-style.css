@@ -8,6 +8,7 @@
 - Content;
 - Grid;
 - Effects;
+- Actions;
 */
 
 /* Colors */
@@ -95,7 +96,8 @@ body, button {
   padding-bottom: 1.4em;
 }
 
-.identity-info  {
+.identity-info,
+#menu-hide  {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -109,8 +111,20 @@ body, button {
   height: 3em;
 }
 
-.identity-info>div {
+.identity-info>div{
   margin-top: 0.75em;
+  margin-left: 0.75em;
+  height: 1em;
+}
+
+#menu-hide>i {
+  display: inline-flex;
+  float: left;
+}
+#menu-hide>div {
+  display: inline-flex;
+  float: left;
+  margin-top: 0.25em;
   margin-left: 0.75em;
   height: 1em;
 }
@@ -163,6 +177,11 @@ body, button {
   justify-content: flex-start;
 }
 
+.menu-panel li.hidden-menu-pos {
+  visibility: hidden;
+  display: none;
+}
+
 .menu-panel li>i {
   display: inline-flex;
   float: left;
@@ -184,9 +203,7 @@ body, button {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
-  max-width: calc(100vw - 14em);
-  width: calc(100vw - 22% + 0.7em);
+  width:100%;
   max-height: 100vh;
   height: 100vh;
 }
@@ -383,4 +400,10 @@ body, button {
 -ms-transition:     color 1s ease-out;
 -o-transition:      color 1s ease-out;
 transition:         color 1s ease-out
+}
+
+/* Actions */
+#menu-hide.hide-menu-section {
+  visibility: hidden;
+  display:none;
 }
