@@ -163,6 +163,11 @@ body, button {
   justify-content: flex-start;
 }
 
+.menu-panel li.hidden-menu-pos {
+  visibility: hidden;
+  display: none;
+}
+
 .menu-panel li>i {
   display: inline-flex;
   float: left;
