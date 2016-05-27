@@ -131,6 +131,10 @@ body, button {
   margin-right: 1em;
 }
 
+#menu-icon {
+  visibility: collapse;
+}
+
 /* Navigation: Menu index */
 .menu-panel {
   display: flex;

@@ -1,0 +1,24 @@
+@media (max-width: 960px) {
+  #menu-icon {
+    visibility: visible;
+  }
+  .navigation-panel {
+    visibility: collapse;
+  }
+
+}
+
+.horizontal-three {
+  width: 100%;
+  min-width: 25em;
+}
+
+.horizontal-two {
+  width: 62%;
+  min-width: 23em;
+}
+
+.horizontal-one {
+  width: calc(31% + 4px);
+  min-width: 17em;
+}
