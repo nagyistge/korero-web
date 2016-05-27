@@ -1,0 +1,35 @@
+.flip-card {
+    position: relative;
+    z-index: 1;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    margin: 0;
+    padding: 0;
+}
+
+.flip1, .flip2 {
+    /*position: absolute;*/
+    backface-visibility: hidden;
+    transition: all 1.0s linear;
+    width: 256px;
+    height: 256px;
+    margin: 0;
+}
+
+.flip1 {
+    transform: rotateY(0deg);
+}
+
+.hover-flip1 {
+    transform: rotateY(180deg);
+}
+
+.flip2 {
+    transform: rotateY(180deg);
+    position: absolute;
+    margin-top: -322px;
+}
+
+.hover-flip2 {
+    transform: rotateY(360deg);
+}

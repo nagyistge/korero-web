@@ -4,30 +4,38 @@
     <meta charset="UTF-8">
     <title>Login to Korero</title>
     <link type="text/css" rel="stylesheet" href="css/login-style.css"/>
+    <link type="text/css" rel="stylesheet" href="css/login-flipcard-style.css"/>
+    <script type="text/javascript" src="../lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
 </head>
 <body>
 <div id="cnt">
     <section class="logo login-form">
         <img src="img/1463343794_speech-bubble-round-double-mixed.png" width="256" height="256"/>
     </section>
-    <section class="login-form clearfix">
-        <form action="#">
-            <ul>
-                <li>
-                    <label for="login">Nazwa użytkownika</label>
-                    <input type="text" id="login" placeholder="Login">
-                </li>
-                <li>
-                    <label for="password">Hasło</label>
-                    <input type="password" id="password" placeholder="********">
-                </li>
-                <li>
-                    <input type="submit" value="Zaloguj się" id="submit">
-                </li>
-            </ul>
-        </form>
-    </section>
+    <div class="flip-card login-form">
+        <section class="flip1">
+            <form id="form" action="#">
+                <ul>
+                    <li>
+                        <label for="login">Nazwa użytkownika</label>
+                        <input type="text" id="login" placeholder="Login">
+                    </li>
+                    <li>
+                        <label for="password">Hasło</label>
+                        <input type="password" id="password" placeholder="********">
+                    </li>
+                    <li>
+                        <input type="submit" value="Zaloguj się" id="submit">
+                    </li>
+                </ul>
+            </form>
+        </section>
+        <section class="flip2">
+            <span>Logowanie...</span>
+        </section>
+        <footer>&copy;2016 Korero Team</footer>
+    </div>
 </div>
-<footer>&copy;2016 Korero Team</footer>
 </body>
 </html>

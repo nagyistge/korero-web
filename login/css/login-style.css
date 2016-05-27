@@ -9,6 +9,7 @@ html {
     position: relative;
     margin-top: calc(50vh - 192px);
     margin-top: -webkit-calc(50vh - 192px);
+    align-items: center;
 }
 
 .login-form li {
@@ -20,16 +21,6 @@ html {
 label {
     display: block;
     color: #105b63;
-}
-
-/* http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before, .clearfix:after {
-    content: "";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
 }
 
 .login-form input:not(#submit) {
@@ -80,13 +71,22 @@ footer {
 #cnt {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
 }
 
 input[type="text"]:focus, input[type="password"]:focus {
     outline: none !important;
     border-color: #105b63;
     box-shadow: 0 0 10px #105b63;
+}
+
+.flip2 {
+    line-height: 256px;
+    text-align: center;
+}
+
+.flip2 span {
+    font-size: 2em;
 }
 
 @media screen and (max-width: 640px) {
@@ -101,10 +101,15 @@ input[type="text"]:focus, input[type="password"]:focus {
     }
 
     .login-form {
-        float: right;
+        float: inherit;
         width: 256px;
         justify-content: center;
         align-items: center;
+    }
+
+    #cnt {
+        float: left;
+        margin: 1em;
     }
 }
 
@@ -141,5 +146,9 @@ input[type="text"]:focus, input[type="password"]:focus {
     .login-form input {
         border: 1px solid black;
         text-shadow: none;
+    }
+
+    .flip2 {
+        display: none;
     }
 }
