@@ -292,6 +292,7 @@ body, button {
 .grid-cell {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: #ffffff;
   color: #37474f; /* panel-light-color */
   box-sizing: border-box;
@@ -303,8 +304,14 @@ body, button {
   clear: both;
 }
 
+.grid-cell>img {
+  width: 100%;
+  height: auto;
+}
+
 .horizontal-three {
   width: 100%;
+  min-width: 25em;
 }
 
 .horizontal-two {
@@ -316,6 +323,39 @@ body, button {
   width: calc(31% + 4px);
   min-width: 15em;
 }
+
+.content-gallery {
+  display: flex;
+  flex-direction: row;;
+  justify-content: flex-start;
+  width: calc(100%);
+  height: auto;
+}
+
+.content-square {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-left: 0.75em;
+  padding-bottom: 0.75em;
+  padding-right: 0.75em;
+}
+
+.stats-square {
+  box-sizing: border-box;
+  width: 13.5em;
+  height: 13.5em;
+  border-radius: 100%;
+}
+
+.stats-border-accent {
+  border: 1.3em #FF4081 solid;
+}
+
+.stats-border-default {
+  border: 1.3em #673AB7 solid;
+}
+
 
 /* Effects */
 .casting-shadow {
@@ -333,7 +373,7 @@ body, button {
 }
 
 .casting-shadow-onhover:hover{
-  box-shadow: 0 2px 3px 0 rgba(0,0,0,.24),0 3px 1px -2px rgba(0,0,0,.28),0 1px 5px 0 rgba(0,0,0,.2);
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.28),0 3px 1px -2px rgba(0,0,0,.32),0 1px 5px 0 rgba(0,0,0,.24);
   transition-duration: .15s;
   transition-timing-function: cubic-bezier(.4,0,.2,1);
   transition-property: max-height,box-shadow;
