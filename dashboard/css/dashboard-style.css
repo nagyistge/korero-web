@@ -184,9 +184,7 @@ body, button {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
-  max-width: calc(100vw - 14em);
-  width: calc(100vw - 22% + 0.7em);
+  width:100%;
   max-height: 100vh;
   height: 100vh;
 }
