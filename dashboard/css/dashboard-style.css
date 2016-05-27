@@ -316,32 +316,26 @@ body, button {
 
 .horizontal-two {
   width: 62%;
-  min-width: 25em;
+  min-width: 23em;
 }
 
 .horizontal-one {
   width: calc(31% + 4px);
-  min-width: 15em;
+  min-width: 17em;
 }
 
 .content-gallery {
   display: flex;
-  flex-direction: row;;
-  justify-content: flex-start;
-  width: calc(100%);
-  height: auto;
-}
-
-.content-square {
-  display: flex;
+  flex-direction: row;
   justify-content: center;
-  width: 100%;
-  padding-left: 0.75em;
-  padding-bottom: 0.75em;
-  padding-right: 0.75em;
+  flex-wrap: wrap;
+  width:auto;
 }
 
 .stats-square {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 1em;
   box-sizing: border-box;
   width: 13.5em;
   height: 13.5em;
