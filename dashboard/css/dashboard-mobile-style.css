@@ -1,3 +1,18 @@
+@media (max-width: 1325px){
+  .horizontal-three {
+    width: 100%;
+    min-width: 25em;
+  }
+  .horizontal-two {
+    width: 100%;
+    min-width: 20em;
+  }
+  .horizontal-one {
+    width: 60%;
+    min-width: 17em;
+  }
+}
+
 @media (max-width: 960px) {
   #menu-icon {
     visibility: visible;
@@ -5,20 +20,26 @@
   .navigation-panel {
     visibility: collapse;
   }
-
+  .horizontal-three {
+    width: 100%;
+  }
+  .horizontal-two {
+    width: 100%;
+  }
+  .horizontal-one {
+    width: 80%;
+    min-width: 10em;
+  }
 }
 
-.horizontal-three {
-  width: 100%;
-  min-width: 25em;
-}
-
-.horizontal-two {
-  width: 62%;
-  min-width: 23em;
-}
-
-.horizontal-one {
-  width: calc(31% + 4px);
-  min-width: 17em;
+@media (max-width:575px){
+  .horizontal-three {
+    width: 100%;
+  }
+  .horizontal-two {
+    width: 100%;
+  }
+  .horizontal-one {
+    width: 100%;
+  }
 }
