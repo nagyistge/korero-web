@@ -1,6 +1,6 @@
-@media (max-height: 700px) {
+@media (max-height: 600px) {
   .menu-panel {
-    min-height: calc(100vh - 10em);
+    min-height: calc(100vh - 12em);
     height: auto;
   }
 }
