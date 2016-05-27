@@ -254,6 +254,7 @@ body, button {
   justify-content: flex-start;
   width: 100%;
   min-height: calc(100vh - 12em);
+  max-height: 100%;
   overflow-y: auto;
 }
 
@@ -302,16 +303,16 @@ body, button {
   clear: both;
 }
 
-.vertical-three {
+.horizontal-three {
   width: 100%;
 }
 
-.vertical-two {
+.horizontal-two {
   width: 62%;
   min-width: 25em;
 }
 
-.vertical-one {
+.horizontal-one {
   width: calc(31% + 4px);
   min-width: 15em;
 }
