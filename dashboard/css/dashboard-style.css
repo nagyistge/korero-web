@@ -179,12 +179,17 @@ body, button {
   width: 100%;
 }
 
-.header-container>div,
 .header-container>header  {
   font-size: 1.4em;
   text-transform: capitalize;
   padding-top: 0.7em;
   padding-bottom: 1.1em;
+}
+
+.header-container>div {
+  font-size: 1.4em;
+  padding-top: 0.7em;
+  padding-bottom: 0.8em;
 }
 
 .header-container>header {
@@ -211,18 +216,20 @@ body, button {
 }
 
 .header-container>.options-icon {
-  margin-top: 0.2em;
+  display: flex;
+  flex-direction: row;
   margin-right: 3em;
 }
 
 .options-icon>label{
-  margin-left: 0.25em;
-  padding: 0.6em;
-  bottom: 1em;
+  padding: 0.2em;
+  display: flex;
+  margin-left: 1em;
 }
 
 .options-icon>label:hover {
   color: #D1C4E9; /* .light-primary-color */
+  border-radius: 100%;
 }
 
 .main-content>.content-container {
@@ -240,7 +247,6 @@ body, button {
 
 .content-container p[title="abstract"]{
   font-weight: 500;
-  padding-top: 1em;
   padding-bottom: 1em;
 }
 
@@ -252,6 +258,15 @@ body, button {
 .casting-shadow {
   z-index: 3;
   box-shadow: 0 2px 3px 0 rgba(0,0,0,.16),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.casting-shadow-onhover {
+  z-index: 3;
+  box-shadow: none;
+}
+
+.casting-shadow-onhover:hover{
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.22),0 3px 1px -2px rgba(0,0,0,.26),0 1px 5px 0 rgba(0,0,0,.18);
   transition-duration: .15s;
   transition-timing-function: cubic-bezier(.4,0,.2,1);
   transition-property: max-height,box-shadow;
