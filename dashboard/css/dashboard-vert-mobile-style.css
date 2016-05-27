@@ -1,9 +1,11 @@
 @media (max-height: 460px) {
-  .identity-panel {
+  .identity-panel,
+  #menu-hide {
     padding-top: 0.7em;
     padding-bottom: 0.7em;
   }
-  .identity-panel>div {
+  .identity-panel>div,
+  #menu-hide>div {
     margin-top: 0;
   }
   .identity-footer {
@@ -12,7 +14,7 @@
   }
 
   .menu-panel li.hidden-menu-pos {
-    visibility: visible;;
+    visibility: visible;
     display: flex;
   }
 }
