@@ -92,4 +92,12 @@
     #icon-media:after {
         content: url(../img/ic_perm_media_black.png);
     }
+
+    #devices-image img {
+        display: none;
+    }
+
+    #devices-image:after {
+        content: url(../img/devices_transp.png);
+    }
 }
