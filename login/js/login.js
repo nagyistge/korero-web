@@ -3,6 +3,9 @@ $(document).ready(function () {
         e.preventDefault();
         $('.flip1').css({transform: 'rotateY(180deg)'});
         $('.flip2').css({transform: 'rotateY(360deg)'});
-        console.log('transform');
+
+        setTimeout(function() {
+            window.location.href = "../dashboard/index.html";
+        }, 2000);
     });
 });
