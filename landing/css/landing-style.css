@@ -1,7 +1,9 @@
+@import "../../css/colors.css";
+
 html {
     font-family: Roboto, sans-serif;
     font-size: 10px;
-    background: #105B63;
+    /*background: #105B63;*/
     position: relative;
     padding: 1em;
     margin: 1em;
@@ -11,7 +13,7 @@ html {
 
 section {
     padding: 1em;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     border-radius: 0.5em;
     box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.2), inset 0 0.1em 0 0 rgba(255, 255, 255, 0.5);
     border: 0.1em solid rgba(0, 0, 0, 0.3);
@@ -26,7 +28,7 @@ section {
 
 .icons {
     /*background-color: #bbbbbb;*/
-    background-color: #BD4932;
+    /*background-color: #BD4932;*/
     display: inline-block;
     vertical-align: middle;
     margin: 3em;
@@ -44,7 +46,7 @@ section {
 footer {
     text-align: center;
     vertical-align: bottom;
-    color: #fffad5;
+    /*color: #fffad5;*/
 }
 
 #info {
@@ -67,7 +69,7 @@ footer {
 #devices-image {
     position: relative;
     bottom: 6.4em;
-    background-color: #EFFB41;
+    /*background-color: #EFFB41;*/
     width: 25em;
 }
 
@@ -79,111 +81,3 @@ li {
     font-size: 2em;
 }
 
-@media screen and (max-width: 640px) {
-    html {
-        margin-top: 0;
-    }
-
-    .cnt {
-        display: table;
-    }
-
-    #info {
-        display: table;
-        align-items: center;
-
-    }
-
-    #title {
-        font-size: 2.8em;
-        font-weight: bold;
-    }
-
-    .desc {
-        font-size: 1.4em;
-    }
-
-    li {
-        font-size: 1.2em;
-    }
-
-    .icons {
-        align-items: center;
-
-    }
-
-    #devices-image {
-        position: relative;
-        left: 4em;
-        background-color: #EFFB41;
-        bottom: 0;
-        width: 25em;
-    }
-
-    .big-section {
-        display: table;
-        width: 40em;
-    }
-
-    footer {
-        text-align: left;
-    }
-}
-
-@media print {
-    /** {
-        -webkit-print-color-adjust: exact;
-    }*/
-    html {
-        background: none;
-    }
-
-    #devices-image {
-        background-color: #EFFB41;
-    }
-
-    .icons {
-        background-color: #bbbbbb;
-        transform: rotateY(0deg);
-    }
-
-    #icon-history img {
-        display: none;
-    }
-
-    #icon-history:after {
-        content: url(../img/ic_history_black.png);
-    }
-
-    #icon-android img {
-        display: none;
-    }
-
-    #icon-android:after {
-        content: url(../img/ic_android_black.png);
-    }
-
-    #icon-lock img {
-        display: none;
-    }
-
-    #icon-lock:after {
-        content: url(../img/ic_lock_outline_black.png)
-    }
-
-    #icon-media img {
-        display: none;
-    }
-
-    #icon-media:after {
-        content: url(../img/ic_perm_media_black.png);
-    }
-
-    #devices-image img {
-        display: none;
-    }
-
-    #devices-image:after {
-        content: url(../img/devices_transp.png);
-    }
-}

@@ -1,0 +1,95 @@
+@media screen and (max-width: 640px) {
+    html {
+        margin-top: 0;
+    }
+
+    .cnt {
+        display: table;
+    }
+
+    #info {
+        display: table;
+        align-items: center;
+
+    }
+
+    #title {
+        font-size: 2.8em;
+        font-weight: bold;
+    }
+
+    .desc {
+        font-size: 1.4em;
+    }
+
+    li {
+        font-size: 1.2em;
+    }
+
+    .icons {
+        align-items: center;
+
+    }
+
+    #devices-image {
+        position: relative;
+        left: 4em;
+        bottom: 0;
+        width: 25em;
+    }
+
+    .big-section {
+        display: table;
+        width: 40em;
+    }
+
+    footer {
+        text-align: left;
+    }
+}
+
+@media print {
+    html {
+        background: none;
+    }
+
+    #devices-image {
+        background: white;
+    }
+
+    .icons {
+        background-color: white;
+    }
+
+    #icon-history img {
+        display: none;
+    }
+
+    #icon-history:after {
+        content: url(../img/ic_history_black.png);
+    }
+
+    #icon-android img {
+        display: none;
+    }
+
+    #icon-android:after {
+        content: url(../img/ic_android_black.png);
+    }
+
+    #icon-lock img {
+        display: none;
+    }
+
+    #icon-lock:after {
+        content: url(../img/ic_lock_outline_black.png)
+    }
+
+    #icon-media img {
+        display: none;
+    }
+
+    #icon-media:after {
+        content: url(../img/ic_perm_media_black.png);
+    }
+}
