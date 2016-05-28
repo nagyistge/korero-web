@@ -5,16 +5,18 @@
     <title>Login to Korero</title>
     <link type="text/css" rel="stylesheet" href="css/login-style.css"/>
     <link type="text/css" rel="stylesheet" href="css/login-flipcard-style.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/colors.css"/>
+    <link type="text/css" rel="stylesheet" href="css/responsive.css"/>
     <script type="text/javascript" src="../lib/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
 </head>
-<body>
-<div id="cnt">
-    <section class="logo login-form">
+<body class="content-contener-background">
+<div id="cnt" class="casting-shadow">
+    <section class="logo login-form light-primary-color casting-shadow">
         <img src="img/1463343794_speech-bubble-round-double-mixed.png" width="256" height="256"/>
     </section>
     <div class="flip-card login-form">
-        <section class="flip1">
+        <section class="flip1 casting-shadow light-primary-color">
             <form id="form" action="#">
                 <ul>
                     <li>
@@ -26,12 +28,12 @@
                         <input type="password" id="password" placeholder="********">
                     </li>
                     <li>
-                        <input type="submit" value="Zaloguj się" id="submit">
+                        <input type="submit" value="Zaloguj się" id="submit" class="accent-color"/>
                     </li>
                 </ul>
             </form>
         </section>
-        <section class="flip2">
+        <section class="flip2 casting-shadow light-primary-color">
             <span>Logowanie...</span>
         </section>
         <footer>&copy;2016 Korero Team</footer>

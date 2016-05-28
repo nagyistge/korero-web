@@ -1,0 +1,63 @@
+@media screen and (max-width: 640px) {
+    html {
+        /*    background: red;*/
+        margin-top: calc(50vh - 192px);
+        margin-top: -webkit-calc(50vh - 192px);
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .login-form {
+        float: inherit;
+        width: 256px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cnt {
+        float: left;
+        margin: 1em;
+    }
+}
+
+@media print {
+    * {
+        background: none;
+    }
+
+    label {
+        color: black;
+    }
+
+    .login-form #submit {
+        color: black;
+        background: none;
+    }
+
+    footer {
+        color: black;
+        font-size: larger;
+    }
+
+    section {
+        background: none;
+        box-shadow: none;
+        border: 1px solid black;
+    }
+
+    .login-form {
+        color: black;
+        background: none;
+    }
+
+    .login-form input {
+        border: 1px solid black;
+        text-shadow: none;
+    }
+
+    .flip2 {
+        display: none;
+    }
+}

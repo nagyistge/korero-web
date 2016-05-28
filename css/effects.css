@@ -1,0 +1,28 @@
+.casting-shadow {
+    z-index: 3;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.16),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.casting-shadow-above {
+    z-index: 3;
+    box-shadow: 0 -2px 3px 0 rgba(0,0,0,.16),0 -3px 1px -2px rgba(0,0,0,.2),0 -1px 5px 0 rgba(0,0,0,.12);
+}
+
+.casting-shadow-onhover {
+    z-index: 3;
+}
+
+.casting-shadow-onhover:hover{
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.28),0 3px 1px -2px rgba(0,0,0,.32),0 1px 5px 0 rgba(0,0,0,.24);
+    transition-duration: .15s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-property: max-height,box-shadow;
+}
+
+.color-ease-out {
+    -webkit-transition: color 1s ease-out;
+    -moz-transition:    color 1s ease-out;
+    -ms-transition:     color 1s ease-out;
+    -o-transition:      color 1s ease-out;
+    transition:         color 1s ease-out
+}
